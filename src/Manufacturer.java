@@ -18,7 +18,7 @@ public class Manufacturer {
             e.printStackTrace();
         }
         System.out.println(Thread.currentThread().getName() + " уехал на новеньком авто");
-        return showroom.cars.remove(0);
+        return showroom.getCars().remove(0);
     }
 
     public synchronized void receiveCar() {
